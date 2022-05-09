@@ -1,0 +1,22 @@
+ About:
+ 
+ This library has three main functions.
+    
+    create_ed25519_keyfile();
+    load_ed25519_keyfile();
+    sign_ed25519_tx(String tx);
+    
+ create_ed25519_keyfile() :: This function checks if a ed25519 key file exists on the device if not it creates one.
+ 
+ load_ed25519_keyfile() :: This function opens the ed25519 file if it exists and returns the psk.
+ 
+ sign_ed25519_tx(String tx) :: This function uses the `load_ed25519_keyfile()` function to load the ed25519 key file and uses the psk to sign the pay load and verifys the signed payload.
+ 
+ 
+ I the 'Exampled' folder there is a sketch that lets you play with all three of these functions.
+
+ 
+ How to Use:
+ 
+ Make sure you take all the library folders included in this directory and move them to your OS Adruino library folder.
+ Once you load up the example sketch and all the library folders are i thier correct places you sohuld be able to compile and use.
