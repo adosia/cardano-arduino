@@ -8,7 +8,13 @@
    `String sign_ed25519_tx( String tx, const char* psk );`
    `bool verify_ed25519_tx( String tx, uint8_t *pkk, uint8_t* signature );`
     
-   **create_ed25519_keyfile()** :: This function checks if a ed25519 key file exists on the device if not it creates one.
+    
+   <details>
+   <summary><b>create_ed25519_keyfile()</b></summary>
+
+    :: This function checks if a ed25519 key file exists on the device if not it creates one.
+   </details>
+   
    
    **remove_ed25519_keyfile()** :: This function removes all key files on the device.
    
