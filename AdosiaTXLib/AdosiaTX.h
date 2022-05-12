@@ -14,11 +14,11 @@ class AdosiaTX {
     uint8_t ed25519_privateKey[32];
     uint8_t ed25519_publicKey[32];
     void create_ed25519_keyfile();
+    void remove_ed25519_keyfile();
     String load_ed25519_keyfile();
-    void sign_ed25519_tx(String tx);
+    String sign_ed25519_tx( String tx, const char* psk );
+    bool verify_ed25519_tx( String tx, uint8_t *pkk, uint8_t* signature );
     void printHex();
-    void genPrivKey();
-    void checkFiles();
 };
 
 #endif
